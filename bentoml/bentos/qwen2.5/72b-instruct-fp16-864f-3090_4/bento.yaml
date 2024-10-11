@@ -20,7 +20,7 @@ services:
     name: qwen2.5
     resources:
       gpu: 4
-      gpu_type: nvidia-3090-24g
+        # gpu_type: nvidia-3090-24g
     traffic:
       timeout: 300
 envs: []
