@@ -1,6 +1,6 @@
 service: service:VLLM
 name: qwen2.5
-version: 72b-instruct-fp16-864f
+version: 72b-instruct-fp16-864f_3090_4
 bentoml_version: 1.3.7
 creation_time: '2024-09-27T09:49:02.374142+00:00'
 labels:
