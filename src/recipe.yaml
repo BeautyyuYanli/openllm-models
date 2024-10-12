@@ -11,6 +11,3 @@
     model: Qwen/Qwen2.5-72B-Instruct-GPTQ-Int8
     dtype: auto
     tensor-parallel-size: 4
-  extra_labels:
-    openllm_alias: 72b,72b-instruct
-    model_name: Qwen/Qwen2.5-72B-Instruct

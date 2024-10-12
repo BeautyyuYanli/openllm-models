@@ -2,9 +2,6 @@ engine_config:
   dtype: auto
   model: Qwen/Qwen2.5-72B-Instruct-GPTQ-Int8
   tensor-parallel-size: 4
-extra_labels:
-  model_name: Qwen/Qwen2.5-72B-Instruct
-  openllm_alias: 72b,72b-instruct
 project: vllm-chat
 service_config:
   name: qwen2.5
