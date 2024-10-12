@@ -1,4 +1,4 @@
-# qwen2.5:72b-q8-3090-4-4f3b
+# qwen2.5:72b-q8-3090-4-2356
 
 [![pypi_status](https://img.shields.io/badge/BentoML-1.3.8-informational)](https://pypi.org/project/BentoML)
 [![documentation_status](https://readthedocs.org/projects/bentoml/badge/?version=latest)](https://docs.bentoml.com/)

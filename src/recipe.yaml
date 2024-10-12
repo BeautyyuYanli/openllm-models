@@ -10,4 +10,4 @@
   engine_config:
     model: Qwen/Qwen2.5-72B-Instruct-GPTQ-Int8
     dtype: auto
-    tensor-parallel-size: 4
+    tensor_parallel_size: 4
