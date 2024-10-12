@@ -6,8 +6,24 @@
       timeout: 300
     resources:
       gpu: 4
-      gpu_type: nvidia-a100-80g
+      gpu_type: nvidia-rtx-3090
   engine_config:
     model: Qwen/Qwen2.5-72B-Instruct-GPTQ-Int8
-    dtype: auto
     tensor_parallel_size: 4
+  extra_labels:
+    openllm_alias: 72b-q8-3090-4
+'qwen2.5:14b-3090-4':
+  project: vllm-chat
+  service_config:
+    name: qwen2.5
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 4
+      gpu_type: nvidia-rtx-3090
+  engine_config:
+    model: Qwen/Qwen2.5-14B-Instruct
+    tensor_parallel_size: 2
+    pipeline_parallel_size: 2
+  extra_labels:
+    openllm_alias: 72b-q8-3090-4
