@@ -6,7 +6,7 @@ project: vllm-chat
 service_config:
   name: qwen2.5
   resources:
-    gpu: 1
+    gpu: 4
     gpu_type: nvidia-a100-80g
   traffic:
     timeout: 300
