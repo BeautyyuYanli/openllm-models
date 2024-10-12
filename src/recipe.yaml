@@ -26,4 +26,4 @@
     tensor_parallel_size: 2
     pipeline_parallel_size: 2
   extra_labels:
-    openllm_alias: 72b-q8-3090-4
+    openllm_alias: 14b-q8-3090-4

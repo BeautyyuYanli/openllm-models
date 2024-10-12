@@ -9,7 +9,7 @@ include:
 - ui/chunks/pages/*
 - chat_templates/chat_templates/*
 labels:
-  openllm_alias: 72b-q8-3090-4
+  openllm_alias: 14b-q8-3090-4
   platforms: linux
   source: https://github.com/bentoml/openllm-models/tree/main/src/vllm-chat
 python:
