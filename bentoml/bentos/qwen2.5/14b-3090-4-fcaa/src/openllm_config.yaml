@@ -1,0 +1,14 @@
+engine_config:
+  model: Qwen/Qwen2.5-14B-Instruct
+  pipeline_parallel_size: 2
+  tensor_parallel_size: 2
+extra_labels:
+  openllm_alias: 72b-q8-3090-4
+project: vllm-chat
+service_config:
+  name: qwen2.5
+  resources:
+    gpu: 4
+    gpu_type: nvidia-rtx-3090
+  traffic:
+    timeout: 300
