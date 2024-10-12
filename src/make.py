@@ -58,7 +58,7 @@ def ensure_venv(req_txt_file, venv_dir):
                 "install",
                 "bentoml",
                 "-p",
-                venv_dir/"bin"/"python",
+                venv_dir / "bin" / "python",
             ],
             check=True,
         )
@@ -72,7 +72,7 @@ def ensure_venv(req_txt_file, venv_dir):
                 "-r",
                 req_txt_file,
                 "-p",
-                venv_dir/"bin"/"python",
+                venv_dir / "bin" / "python",
             ],
             check=True,
         )
@@ -132,7 +132,10 @@ if __name__ == "__main__":
 
             # prepare venv
             req_txt_file = tempdir / "requirements.txt"
-            venv_dir = pathlib.Path("venv").absolute() / f"{project}-{hash_file(req_txt_file)[:7]}"
+            venv_dir = (
+                pathlib.Path("venv").absolute()
+                / f"{project}-{hash_file(req_txt_file)[:7]}"
+            )
             version_path = ensure_venv(req_txt_file, venv_dir)
 
             subprocess.run(
